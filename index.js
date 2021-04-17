@@ -22,7 +22,7 @@ client.once('ready', () => {
 	let activies = ['\"como matar Ren Riki\"','podcast dos Wendigos','\"Dois jovens ficam presos ao resgatar amiga\"'];
 	
 	let i=0;
-	let seg=60;
+	let seg=60*30;
 	setInterval(()=> client.user.setActivity(`${activies[i++ % activies.length]}`, {
 	 type: "WATCHING"
 	}), seg * 1000);
