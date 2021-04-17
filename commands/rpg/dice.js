@@ -7,11 +7,10 @@ module.exports = {
 	guildOnly: false,
 	cooldown: 5,
 	execute(message, args) {
-		var Dice = require('dice');
-  var dice = new Dice();
+		var d20 = require('d20');
   
-  let result = dice.execute(args[0]);
+  let result = d20.roll(args[0]);
   
-  message.channel.send(`Resultado do dado: ${result.outcomes[rolls[0]]}`);
+  message.channel.send(`Resultado do dado: ${result} ||isso é um teste||`);
 	},
 };
