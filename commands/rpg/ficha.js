@@ -7,6 +7,9 @@ module.exports = {
 	guildOnly: true,
 	cooldown: 30,
 	execute(message, args) {
+	 const { MessageEmbed } = require('discord.js');
+  var fs = require('fs');
+
 	 var fichaJSON;
 	 
 	 if(args[0] == "ren" || args[0] == "fernando" || args[0] == "fefe") {
