@@ -1,6 +1,6 @@
 {
   "name": "wankebot",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a discord bot builded by Wander Cake for fun.",
   "main": "index.js",
   "scripts": {

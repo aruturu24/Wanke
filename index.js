@@ -19,10 +19,10 @@ for (const folder of commandFolders) {
 client.once('ready', () => {
 	console.log('Bot tá online! :D');
 	
-	let activies = ['\"como matar Ren Riki\"','podcast dos Wendigos','\"Dois jovens ficam presos ao resgatar amiga\"'];
+	let activies = ['\"como matar Ren Riki\"','podcast dos Wendigos','\"Dois jovens ficam presos ao resgatar amiga\"', '\"Cala a boca, Oliver!\"', 'Artwa e Hunnigan, uma história de amor', 'a morte da Heloísa 😭'];
 	
 	let i=0;
-	let seg=60*30;
+	let seg=60*10;
 	setInterval(()=> client.user.setActivity(`${activies[i++ % activies.length]}`, {
 	 type: "WATCHING"
 	}), seg * 1000);

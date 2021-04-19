@@ -1,0 +1,71 @@
+{
+ "nome": "Ren Riki",
+ "idade": 666,
+ "nacionalidade": "Japonês",
+ "ocupação": "detetive",
+ "passatempo": "dançar",
+ "relações": ["Nome Da Mãe", "Nome Do Pai"],
+ 
+ "tamanho": 1.80,
+ 
+ "força": 20,
+ "constituição": 20,
+ "destreza": 20,
+ "carisma": 20,
+ "inteligência": 20,
+ "poder": 20,
+ 
+ "vida": 20,
+ "max-vida": 20,
+ "sanidade": 20,
+ "max-sanidade": 20,
+ 
+ "perícias": {
+  "contabilidade": [50, 25, 16],
+  "arqueologia": [50, 25, 16],
+  "arquitetura": [50, 25, 16],
+  "arte": [50, 25, 16],
+  "história": [50, 25, 16],
+  "línguas": {
+   "português": [100, 50, 25],
+   "inglês": [50, 25, 16]
+  },
+  "leis": [50, 25, 16],
+  "ciência militar": [50, 25, 16],
+  "ciência oculta": [50, 25, 16],
+  "pesquisar": [50, 25, 16],
+  
+  "flertar": [50, 25, 16],
+  "interrogar": [50, 25, 16],
+  "intimidar": [50, 25, 16],
+  "lábia": [50, 25, 16],
+  
+  "criptografia": [50, 25, 16],
+  "recuperação de dados": [50, 25, 16],
+  "vigilância eletrônica": [50, 25, 16],
+  "ciência forense": [50, 25, 16],
+  "sobrevivência": [50, 25, 16],
+  "farmácia": [50, 25, 16],
+  "fotografia": [50, 25, 16],
+  "radiotelegrafia": [50, 25, 16],
+  
+  "atletismo": [50, 25, 16],
+  "esconder": [50, 25, 16],
+  "computação": [50, 25, 16],
+  "disfarce": [50, 25, 16],
+  "dirigir": {
+   "carro": [50, 25, 16],
+   "moto": [50, 25, 16]
+  },
+  "dispositivos explosivos": [50, 25, 16],
+  "roubar": [50, 25, 16],
+  "brigar": [50, 25, 16],
+  "mecânica": [50, 25, 16],
+  "medicina": [50, 25, 16],
+  "atirar": {
+   "pistola": [50, 25, 16]
+  },
+  "psiquiatria": [50, 25, 16],
+  "vigilância": [50, 25, 16]
+ }
+}

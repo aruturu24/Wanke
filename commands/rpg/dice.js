@@ -1,9 +1,9 @@
 module.exports = {
 	name: 'dice',
 	description: 'Rolar um dado.',
-	aliases: ['dado'],
+	aliases: ['dado', 'roll'],
 	args: true,
-	usage: '',
+	usage: '<(quantidade)D(faces)>',
 	guildOnly: false,
 	cooldown: 5,
 	execute(message, args) {
