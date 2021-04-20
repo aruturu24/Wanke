@@ -5,9 +5,9 @@ module.exports = {
 	args: true,
 	usage: '<nome do personagem>',
 	guildOnly: true,
-	cooldown: 5,
+	cooldown: 15,
 	execute(message, args) {
-	 const { MessageEmbed } = require('discord.js');
+	 const Discord = require('discord.js');
   var fs = require('fs');
 
 	 var fichaJSON;
@@ -17,6 +17,21 @@ module.exports = {
    fichaJSON = JSON.parse(data);
 	 }
 	 
-		message.channel.send(`**Nome:** ${fichaJSON.nome}`);
+	 const fichaEmbed = new Discord.MessageEmbed()
+	  .setColor(fichaJSON.cor)
+	  .setTitle(fichaJSON.nome)
+	  .setDescription(`${fichaJSON.descrição}`)
+	  .addField('INFO',`**Idade:** ${fichaJSON.idade} anos\n
+	  **Altura:** ${fichaJSON.tamanho}\n
+	  **Nacionalidade:** ${fichaJSON.nacionalidade}\n
+	  **Ocupação:** ${fichaJSON.ocupação}\n
+	  **Passatempo:** ${fichaJSON.passatempo}`)
+	  .addField('STATUS', `**VIDA:** ${fichaJSON.vida}/${fichaJSON.max-vida}\n
+	  **SANIDADE:** ${fichaJSON.sanidade}/${fichaJSON.max-sanidade}\n
+	  **MAGIA:** ${fichaJSON.magia}/${fichaJSON.max-magia}`)
+	  .setTimestamp()
+	  .setFooter('Fernando', 'https://cdn.discordapp.com/avatars/405712573741400074/62b2ccd14958e1751742d63e483349cb.png');
+	 
+		message.channel.send(fichaEmbed);
 	},
 };
