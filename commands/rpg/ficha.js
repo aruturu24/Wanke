@@ -26,9 +26,10 @@ module.exports = {
 	  **Nacionalidade:** ${fichaJSON.nacionalidade}\n
 	  **Ocupação:** ${fichaJSON.ocupação}\n
 	  **Passatempo:** ${fichaJSON.passatempo}`)
-	  .addField('STATUS', `**VIDA:** ${fichaJSON.vida}/${fichaJSON.max-vida}\n
-	  **SANIDADE:** ${fichaJSON.sanidade}/${fichaJSON.max-sanidade}\n
-	  **MAGIA:** ${fichaJSON.magia}/${fichaJSON.max-magia}`)
+	  
+	  .addField('STATUS', `**VIDA:** ${fichaJSON.vida}/${fichaJSON.maxvida}\n
+	  **SANIDADE:** ${fichaJSON.sanidade}/${fichaJSON.maxsanidade}\n
+	  **MAGIA:** ${fichaJSON.magia}/${fichaJSON.maxmagia}`)
 	  .setTimestamp()
 	  .setFooter('Fernando', 'https://cdn.discordapp.com/avatars/405712573741400074/62b2ccd14958e1751742d63e483349cb.png');
 	 

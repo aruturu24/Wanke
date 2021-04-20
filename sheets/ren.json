@@ -19,11 +19,11 @@
  "poder": 30,
  
  "vida": 24,
- "max-vida": 24,
+ "maxvida": 24,
  "sanidade": 52,
- "max-sanidade": 52,
+ "maxsanidade": 52,
  "magia": 30,
- "max-magia": 30,
+ "maxmagia": 30,
  
  "perícias": {
   "contabilidade": [50, 25, 16],
