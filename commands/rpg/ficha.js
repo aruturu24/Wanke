@@ -5,7 +5,7 @@ module.exports = {
 	args: true,
 	usage: '<nome do personagem>',
 	guildOnly: true,
-	cooldown: 30,
+	cooldown: 5,
 	execute(message, args) {
 	 const { MessageEmbed } = require('discord.js');
   var fs = require('fs');
@@ -13,10 +13,8 @@ module.exports = {
 	 var fichaJSON;
 	 
 	 if(args[0] == "ren" || args[0] == "fernando" || args[0] == "fefe") {
-	  fs.readFile('sheets/ren.json', (err, data) => {
-   if (err) { console.log(err); }
+   var data = fs.readFileSync('sheets/ren.json');
    fichaJSON = JSON.parse(data);
-	 });
 	 }
 	 
 		message.channel.send(`**Nome:** ${fichaJSON.nome}`);
