@@ -19,19 +19,16 @@ module.exports = {
 	 
 	 const fichaEmbed = new Discord.MessageEmbed()
 	  .setColor(fichaJSON.cor)
-	  .setTitle(fichaJSON.nome)
+	  .setTitle(`*** ${fichaJSON.nome} ***`)
 	  .setDescription(`${fichaJSON.descrição}`)
-	  .addField('INFO',`**Idade:** ${fichaJSON.idade} anos\n
-	  **Altura:** ${fichaJSON.tamanho}\n
-	  **Nacionalidade:** ${fichaJSON.nacionalidade}\n
-	  **Ocupação:** ${fichaJSON.ocupação}\n
-	  **Passatempo:** ${fichaJSON.passatempo}`)
+	  .addField('• INFO:',`**Idade:** ${fichaJSON.idade} anos\n**Altura:** ${fichaJSON.tamanho}\n**Nacionalidade:** ${fichaJSON.nacionalidade}\n**Ocupação:** ${fichaJSON.ocupação}\n**Passatempo:** ${fichaJSON.passatempo}`)
 	  
-	  .addField('STATUS', `**VIDA:** ${fichaJSON.vida}/${fichaJSON.maxvida}\n
-	  **SANIDADE:** ${fichaJSON.sanidade}/${fichaJSON.maxsanidade}\n
-	  **MAGIA:** ${fichaJSON.magia}/${fichaJSON.maxmagia}`)
+	  .addField('• STATUS:', `**VIDA:** ${fichaJSON.vida}/${fichaJSON.maxvida}\n**SANIDADE:** ${fichaJSON.sanidade}/${fichaJSON.maxsanidade}\n**MAGIA:** ${fichaJSON.magia}/${fichaJSON.maxmagia}`)
+	  
+	  .addField('• Relações:', `${fichaJSON.relações}`)
+	  
 	  .setTimestamp()
-	  .setFooter('Fernando', 'https://cdn.discordapp.com/avatars/405712573741400074/62b2ccd14958e1751742d63e483349cb.png');
+	  .setFooter('Personagem de: **Fernando**', 'https://cdn.discordapp.com/avatars/405712573741400074/62b2ccd14958e1751742d63e483349cb.png');
 	 
 		message.channel.send(fichaEmbed);
 	},
