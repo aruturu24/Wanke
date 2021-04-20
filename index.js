@@ -17,12 +17,15 @@ for (const folder of commandFolders) {
 }
 
 client.once('ready', () => {
-	console.log('Bot tá online! :D');
+ let ontheline = ['Bot tá online! :D', 'O pai tá on! B)', 'Infelizmente acordei. ZZZZzzzz', 'Tenho que ir trabalhar? ):'];
+ let rand = Math.random() * ontheline.lenght-1;
+ 
+	console.log(ontheline[rand]);
 	
-	let activies = ['\"como matar Ren Riki\"','podcast dos Wendigos','\"Dois jovens ficam presos ao resgatar amiga\"', '\"Cala a boca, Oliver!\"', 'Artwa e Hunnigan, uma história de amor', 'a morte da Heloísa 😭'];
+	let activies = ['\"como matar Ren Riki\"','podcast dos Wendigos','\"Dois jovens ficam presos ao resgatar amiga\"', '\"Cala a boca, Oliver!\"', 'Artwa e Hunnigan, uma história de amor', 'a morte da Heloísa 😭', 'Lobo gigante vira churrasco em uma comunidade'];
 	
 	let i=0;
-	let seg=60*10;
+	let seg=60*5;
 	setInterval(()=> client.user.setActivity(`${activies[i++ % activies.length]}`, {
 	 type: "WATCHING"
 	}), seg * 1000);
@@ -86,7 +89,7 @@ client.on('message', message => {
 		command.execute(message, args);
 	} catch (error) {
 		console.error(error);
-		message.reply('Por algum erro, não consegui executar esse comando :(');
+		message.reply('Não tô conseguindo executar o comando :(');
 	}
 });
 
