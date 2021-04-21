@@ -17,6 +17,8 @@ module.exports = {
    fichaJSON = JSON.parse(data);
 	 }
 	 
+	 const {displayAvatarURL} = await client.fetchUser(fichaJSON.by).catch(console.error);
+	 
 	 const fichaEmbed = new Discord.MessageEmbed()
 	  .setColor(fichaJSON.cor)
 	  .setTitle(`*** ${fichaJSON.nome} ***`)
@@ -28,7 +30,7 @@ module.exports = {
 	  .addField('• Relações:', `${fichaJSON.relações}`)
 	  
 	  .setTimestamp()
-	  .setFooter(`Personagem de: ${message.guild.members.get(fichaJSON.by).username}`, message.guild.members.get(fichaJSON.by).avatarURL);
+	  .setFooter(`Personagem de: ${message.guild.members.get(fichaJSON.by).username}`, displayAvatarURL);
 	 
 		message.channel.send(fichaEmbed);
 	},
