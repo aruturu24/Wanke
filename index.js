@@ -17,7 +17,7 @@ for (const folder of commandFolders) {
 }
 
 client.once('ready', () => {
- let ontheline = ['Bot tá online! :D', 'O pai tá on! B)', 'Infelizmente acordei. ZZZZzzzz', 'Tenho que ir trabalhar? ):'];
+ let ontheline = ['Bot tá online! :D', 'O pai tá on! B)', 'Infelizmente acordei. ZZZZzzzz', 'Tenho que ir trabalhar? ):', 'Erro 103: preguiça demais para funcionar'];
  
 	console.log(ontheline[Math.floor((Math.random() * ontheline.length))]);
 	

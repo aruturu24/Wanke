@@ -7,9 +7,16 @@ module.exports = {
 	guildOnly: false,
 	cooldown: 5,
 	execute(message, args) {
-		var d20 = require('d20');
-  
-  let result = d20.roll(args[0], true);
+	 
+  const argsLower = args.toLowerCase();
+  const idk = argsLower.split("d");
+
+  let result = [];
+
+  for(var i = 0; i < idk[0]; i++) {
+   result[i] = Math.floor(Math.random() * idk[1]);
+  }
+
   let msg = `**Resultado dos dados:**\n`;
   
   for(var pos = 0; pos < result.length; pos++) {
