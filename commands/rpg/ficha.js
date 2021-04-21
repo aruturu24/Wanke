@@ -28,7 +28,7 @@ module.exports = {
 	  .addField('• Relações:', `${fichaJSON.relações}`)
 	  
 	  .setTimestamp()
-	  .setFooter(`Personagem de: ${message.guild.members.get(fichaJSON.by).username}`);
+	  .setFooter(`Personagem de: *${fichaJSON.by}*`);
 	 
 		message.channel.send(fichaEmbed);
 	},

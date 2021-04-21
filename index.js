@@ -18,9 +18,8 @@ for (const folder of commandFolders) {
 
 client.once('ready', () => {
  let ontheline = ['Bot tá online! :D', 'O pai tá on! B)', 'Infelizmente acordei. ZZZZzzzz', 'Tenho que ir trabalhar? ):'];
- let rand = Math.random() * ontheline.lenght-1;
  
-	console.log(ontheline[rand]);
+	console.log(ontheline[Math.floor((Math.random() * ontheline.length))]);
 	
 	let activies = ['\"como matar Ren Riki\"','podcast dos Wendigos','\"Dois jovens ficam presos ao resgatar amiga\"', '\"Cala a boca, Oliver!\"', 'Artwa e Hunnigan, uma história de amor', 'a morte da Heloísa 😭', 'Lobo gigante vira churrasco em uma comunidade'];
 	
