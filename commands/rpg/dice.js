@@ -8,7 +8,7 @@ module.exports = {
 	cooldown: 5,
 	execute(message, args) {
 	 
-  const argsLower = args.toLowerCase();
+  const argsLower = args.shift().toLowerCase();
   const idk = argsLower.split("d");
 
   let result = [];
