@@ -21,7 +21,7 @@ module.exports = {
    fichaJSON = JSON.parse(data);
 	 }
 	 
-	 let pericia = fichaJSON[args[0]];
+	 let pericia = fichaJSON[args[1]];
 	 
 	 if(pericia === undefined){
 	  message.channel.send("Perícia inválida.");
