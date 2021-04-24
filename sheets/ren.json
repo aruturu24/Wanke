@@ -12,11 +12,11 @@
  
  "tamanho": 1.90,
  
- "força": 35,
- "constituição": 20,
+ "forca": 35,
+ "constituicao": 20,
  "destreza": 40,
  "carisma": 5,
- "inteligência": 20,
+ "inteligencia": 20,
  "poder": 30,
  
  "vida": 24,

@@ -1,7 +1,7 @@
 module.exports = {
 	name: 'pericia',
 	description: 'Rolar um dado e fala o sucesso.',
-	aliases: ['pericias'],
+	aliases: ['pericias', 'p'],
 	args: true,
 	usage: '<personagem> <perícia>',
 	guildOnly: false,
@@ -19,6 +19,8 @@ module.exports = {
 	 if(args[0] == "ren" || args[0] == "fernando" || args[0] == "fefe") {
    var data = fs.readFileSync('sheets/ren.json');
    fichaJSON = JSON.parse(data);
+	 }else {
+	  return;
 	 }
 	 
 	 let pericia = fichaJSON[args[1]];
