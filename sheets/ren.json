@@ -26,52 +26,50 @@
  "magia": 30,
  "maxmagia": 30,
  
- "perícias": {
-  "contabilidade": [50, 25, 16],
-  "arqueologia": [50, 25, 16],
-  "arquitetura": [50, 25, 16],
-  "arte": [50, 25, 16],
-  "história": [50, 25, 16],
-  "línguas": {
-   "português": [100, 50, 25],
-   "inglês": [50, 25, 16]
-  },
-  "leis": [50, 25, 16],
-  "ciência militar": [50, 25, 16],
-  "ciência oculta": 75,
-  "pesquisar": [50, 25, 16],
+ 
+  "contabilidade": 5,
+  "arqueologia": 1,
+  "arquitetura": 5,
+  "arte": 10,
+  "historia": 5,
   
-  "flertar": [50, 25, 16],
-  "interrogar": [50, 25, 16],
-  "intimidar": [50, 25, 16],
-  "lábia": [50, 25, 16],
+   "japones": 100,
+   "ingles": 55,
   
-  "criptografia": [50, 25, 16],
-  "recuperação de dados": [50, 25, 16],
-  "vigilância eletrônica": [50, 25, 16],
-  "ciência forense": [50, 25, 16],
-  "sobrevivência": [50, 25, 16],
-  "farmácia": [50, 25, 16],
-  "fotografia": [50, 25, 16],
-  "radiotelegrafia": [50, 25, 16],
+  "leis": 1,
+  "oculta": 80,
+  "pesquisar": 70,
   
-  "atletismo": [50, 25, 16],
-  "esconder": [50, 25, 16],
-  "computação": [50, 25, 16],
-  "disfarce": [50, 25, 16],
-  "dirigir": {
-   "carro": [50, 25, 16],
-   "moto": [50, 25, 16]
-  },
-  "dispositivos explosivos": [50, 25, 16],
-  "roubar": [50, 25, 16],
-  "brigar": [50, 25, 16],
-  "mecânica": [50, 25, 16],
-  "medicina": [50, 25, 16],
-  "atirar": {
-   "pistola": [50, 25, 16]
-  },
-  "psiquiatria": [50, 25, 16],
-  "vigilância": [50, 25, 16]
- }
+  "flertar": 20,
+  "interrogar": 60,
+  "intimidar": 65,
+  "labia": 5,
+  
+  "criptografia": 1,
+  "dados": 1,
+  "eletronica": 5,
+  "forense": 60,
+  "sobrevivencia": 60,
+  "farmacia": 5,
+  "fotografia": 15,
+  "radiotelegrafia": 5,
+  
+  "atletismo": 70,
+  "esconder": 70,
+  "computacao": 11,
+  "disfarce": 3,
+  
+   "moto": 80,
+  
+  "explosivos": 1,
+  "roubar": 5,
+  "brigar": 80,
+  "mecanica": 10,
+  "medicina": 5,
+  
+   "pistola": 10,
+   "arremesso": 70,
+  
+  "psiquiatria": 10,
+  "vigilancia": 50
 }

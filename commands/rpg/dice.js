@@ -14,7 +14,8 @@ module.exports = {
   let result = [];
 
   for(var i = 0; i < idk[0]; i++) {
-   result[i] = Math.floor(Math.random() * idk[1]);
+   
+   result[i] = Math.floor(Math.random() * (idk[1]-1))+1;
   }
 
   let msg = `**Resultado dos dados:**\n`;
