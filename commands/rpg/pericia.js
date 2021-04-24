@@ -7,7 +7,7 @@ module.exports = {
 	guildOnly: false,
 	cooldown: 5,
 	execute(message, args) {
-  
+  const Discord = require('discord.js');
   var fs = require('fs');
 
 	 var fichaJSON;
