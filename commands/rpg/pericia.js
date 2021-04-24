@@ -42,7 +42,7 @@ module.exports = {
 	  sucess = "normal";
 	 }
 	 
-	 footer = txt[Math.ceil(Math.random() * (nomes.length - 1))];
+	 footer = txt[Math.ceil(Math.random() * (txt.length - 1))];
 	 
 	 const msg = new Discord.MessageEmbed()
 	  .setColor(fichaJSON.cor)
