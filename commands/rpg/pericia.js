@@ -3,7 +3,7 @@ module.exports = {
 	description: 'Rolar um dado e fala o sucesso.',
 	aliases: ['pericias'],
 	args: true,
-	usage: '<perícia>',
+	usage: '<personagem> <perícia>',
 	guildOnly: false,
 	cooldown: 5,
 	execute(message, args) {
