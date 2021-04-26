@@ -7,18 +7,21 @@ module.exports = {
 	guildOnly: false,
 	cooldown: 5,
 	execute(message, args) {
-  const Discord = require('discord.js');
+  const {MessageEmbed} = require('discord.js');
   var fs = require('fs');
-
-	 var fichaJSON;
-	 let dice = Math.floor(Math.random() * 99)+1;
+  
+  var fichaJSON;
+  
+	 const {dado} = require("./functions");
+	 var dice = dado();
+	 
 	 let sucess = "desastre";
-	 let footer;
-	 var txt = ['KKKKKKKKK MORREU', 'NÃO, NÃO, NÃÃÃÃOOOO', 'F...', 'Sorte tá em dia...'];
+	 let txt = ['KKKKKKKKK MORREU', 'NÃO, NÃO, NÃÃÃÃOOOO', 'F...', 'Sorte tá em dia...'];
 	 
 	 if(args[0] == "ren" || args[0] == "fernando" || args[0] == "fefe") {
-   var data = fs.readFileSync('sheets/ren.json');
-   fichaJSON = JSON.parse(data);
+   fichaJSON = JSON.parse(fs.readFileSync('sheets/ren.json'));
+	 }else if(args[0] == "near" || args[0] == "zoom" || args[0] == "z") {
+	  fichaJSON = JSON.parse(fs.readFileSync('sheets/near.json'));
 	 }else {
 	  return;
 	 }
@@ -30,7 +33,7 @@ module.exports = {
 	  return;
 	 }
 	 
-	 if(dice > pericia & dice < 100-(pericia/5)){
+	 if(dice > pericia && dice < 100-(pericia/5)){
 	  sucess = "fracasso";
 	  txt = ['kkkkkkkk tristeza', 'Poxa ):', 'As vezes temos que errar mesmo', 'Meeeeeh'];
 	 }else if(dice < pericia/5){
@@ -44,12 +47,12 @@ module.exports = {
 	  sucess = "normal";
 	 }
 	 
-	 footer = txt[Math.ceil(Math.random() * (txt.length - 1))];
+	 let footer = txt[Math.ceil(Math.random() * (txt.length - 1))];
 	 
-	 const msg = new Discord.MessageEmbed()
-	  .setColor(fichaJSON.cor)
-	  .setTitle(`*** Dado de ${fichaJSON.nome} ***`)
-	  .setDescription(`Você tirou: **${sucess}**\`\`\`(${dice})\`\`\``)
+	 const msg = new MessageEmbed()
+	  .setColor(fichaJSON.nodice.cor)
+	  .setTitle(`*** Dado de ${fichaJSON.nodice.nome} ***`)
+	  .setDescription(`Você tirou: **${sucess}** \`\`\`(${dice})\`\`\``)
 	  .setTimestamp()
 	  .setFooter(footer);
   

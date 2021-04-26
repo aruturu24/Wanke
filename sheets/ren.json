@@ -1,16 +1,28 @@
 {
- "nome": "Ren Riki",
- "idade": 666,
- "nacionalidade": "Japonês",
- "ocupação": "Mercenário",
- "passatempo": "Meditar",
- "relações": "**Aaron Adler:** Melhor amigo",
+ "nodice": {
+  "nome": "Ren Riki",
+  "idade": 666,
+  "nacionalidade": "Japonês",
+  "ocupação": "Mercenário",
+  "passatempo": "Meditar",
+  "relações": "**Aaron Adler:** Melhor amigo\n**Near Mello Funny:** Amigo\n**Charley Arwin:** Amigo",
  
- "cor": "#40E0D0",
- "descrição": "*Um homem alemão, com cabelos lisos e cavanhaque feito, sua roupa é preta, seus cabelos são loiros e sua pele é branca.*",
+  "cor": "#40E0D0",
+  "descrição": "*Um homem alemão, com cabelos lisos e cavanhaque feito, sua roupa é preta, seus cabelos são loiros e sua pele é branca.*",
  "by": "Fernando",
  
- "tamanho": 1.90,
+  "tamanho": 1.90,
+  
+  "vida": 24,
+  "maxvida": 24,
+  
+  "magia": 30,
+  "maxmagia": 30,
+  
+  "maxsanidade": 52
+ },
+ 
+ "sanidade": 52,
  
  "forca": 35,
  "constituicao": 20,
@@ -18,14 +30,6 @@
  "carisma": 5,
  "inteligencia": 20,
  "poder": 30,
- 
- "vida": 24,
- "maxvida": 24,
- "sanidade": 52,
- "maxsanidade": 52,
- "magia": 30,
- "maxmagia": 30,
- 
  
   "contabilidade": 5,
   "arqueologia": 1,

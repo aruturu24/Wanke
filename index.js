@@ -17,17 +17,17 @@ for (const folder of commandFolders) {
 }
 
 client.once('ready', () => {
- let ontheline = ['Bot tá online! :D', 'O pai tá on! B)', 'Infelizmente acordei. ZZZZzzzz', 'Tenho que ir trabalhar? ):', 'Erro 103: preguiça demais para funcionar'];
+ let ontheline = ['Bot tá online! :D', 'O pai tá on! B)', 'Infelizmente acordei. ZZZZzzzz', 'Tenho que ir trabalhar? ):', '*Erro 103:* preguiça demais para funcionar'];
  
 	console.log(ontheline[Math.floor((Math.random() * ontheline.length))]);
 	
-	let activies = ['\"como matar Ren Riki\"','podcast dos Wendigos','\"Dois jovens ficam presos ao resgatar amiga\"', '\"Cala a boca, Oliver!\"', 'Artwa e Hunnigan, uma história de amor', 'a morte da Heloísa 😭', 'Lobo gigante vira churrasco em uma comunidade'];
+	let activies = ['\"como matar Ren Riki\"','podcast dos Wendigos','\"Dois jovens ficam presos ao resgatar amiga\"', '\"Cala a boca, Oliver!\"', 'Artwa e Hunnigan, uma história de amor', 'a morte da Heloísa 😭', 'Lobo gigante vira churrasco em uma comunidade', 'A MINA MORREU SOTERRADA KKKK'];
 	
-	let i=0;
 	let seg=60*5;
-	setInterval(()=> client.user.setActivity(`${activies[i++ % activies.length]}`, {
-	 type: "WATCHING"
-	}), seg * 1000);
+	setInterval(() => {
+  const index = Math.floor(Math.random() * (activities.length - 1) + 1);
+	 client.user.setActivity(activies[index], {type: "WATCHING"});
+	}, seg * 1000);
 });
 
 client.on('message', message => {
@@ -56,7 +56,7 @@ client.on('message', message => {
 		let reply = `${message.author}, bota os argumentos seu vagabundo >:(`;
 
 		if (command.usage) {
-			reply += `\nO jeito certo de usar é: \`${prefix}${command.name} ${command.usage}\``;
+			reply += `\n\nO jeito certo de usar é: \`${prefix}${command.name} ${command.usage}\``;
 		}
 
 		return message.channel.send(reply);

@@ -1,0 +1,26 @@
+{
+ "nodice": {
+  "nome": "Near Mello Funny",
+  "idade": 28,
+  "nacionalidade": "Japonês",
+  "ocupação": "Ocultista / Mercenário",
+  "passatempo": "Doces / Fumar",
+  "relações": "**Jane Shinobu:** Melhor amiga\n**Henry Duckar:** Mentor\n**Joss:** Amigo\n**Dunsley:** Amigo\n**Kane:** Amigo\n**Ren Riki:** Amigo\n**Charley Arwin:** Amigo\n**Francis Drake:** Patrão",
+ 
+  "cor": "#120A8F",
+  "descrição": "*sem descrição.*",
+  "by": "Zoom",
+ 
+  "tamanho": 1,
+  
+  "vida": 0,
+  "maxvida": 0,
+  
+  "magia": 0,
+  "maxmagia": 0,
+  
+  "maxsanidade": 0
+ },
+ 
+ "sanidade": 0
+}

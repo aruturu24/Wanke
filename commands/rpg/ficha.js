@@ -13,22 +13,25 @@ module.exports = {
 	 var fichaJSON;
 	 
 	 if(args[0] == "ren" || args[0] == "fernando" || args[0] == "fefe") {
-   var data = fs.readFileSync('sheets/ren.json');
-   fichaJSON = JSON.parse(data);
+   fichaJSON = JSON.parse(fs.readFileSync('sheets/ren.json'));
+	 }else if(args[0] == "near" || args[0] == "zoom" || args[0] == "z") {
+	  fichaJSON = JSON.parse(fs.readFileSync('sheets/near.json'));
+	 }else {
+	  return;
 	 }
 	 
 	 const fichaEmbed = new Discord.MessageEmbed()
 	  .setColor(fichaJSON.cor)
-	  .setTitle(`*** ${fichaJSON.nome} ***`)
-	  .setDescription(`${fichaJSON.descrição}`)
-	  .addField('• INFO:',`**Idade:** ${fichaJSON.idade} anos\n**Altura:** ${fichaJSON.tamanho}m\n**Nacionalidade:** ${fichaJSON.nacionalidade}\n**Ocupação:** ${fichaJSON.ocupação}\n**Passatempo:** ${fichaJSON.passatempo}`)
+	  .setTitle(`*** ${fichaJSON.nodice.nome} ***`)
+	  .setDescription(`${fichaJSON.nodice.descrição}`)
+	  .addField('• INFO:',`**Idade:** ${fichaJSON.nodice.idade} anos\n**Altura:** ${fichaJSON.nodice.tamanho}m\n**Nacionalidade:** ${fichaJSON.nodice.nacionalidade}\n**Ocupação:** ${fichaJSON.nodice.ocupação}\n**Passatempo:** ${fichaJSON.nodice.passatempo}`)
 	  
-	  .addField('• STATUS:', `**❤️ VIDA:** ${fichaJSON.vida}/${fichaJSON.maxvida}\n**🧠 SANIDADE:** ${fichaJSON.sanidade}/${fichaJSON.maxsanidade}\n**🌀 MAGIA:** ${fichaJSON.magia}/${fichaJSON.maxmagia}`)
+	  .addField('• STATUS:', `**❤️ VIDA:** ${fichaJSON.nodice.vida}/${fichaJSON.nodice.maxvida}\n**🧠 SANIDADE:** ${fichaJSON.sanidade}/${fichaJSON.nodice.maxsanidade}\n**🌀 MAGIA:** ${fichaJSON.nodice.magia}/${fichaJSON.nodice.maxmagia}`)
 	  
-	  .addField('• Relações:', `${fichaJSON.relações}`)
+	  .addField('• Relações:', `${fichaJSON.nodice.relações}`)
 	  
 	  .setTimestamp()
-	  .setFooter(`Personagem de: *${fichaJSON.by}*`);
+	  .setFooter(`Personagem de: *${fichaJSON.nodice.by}*`);
 	 
 		message.channel.send(fichaEmbed);
 	},
