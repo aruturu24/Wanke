@@ -12,7 +12,7 @@ module.exports = {
   
   var fichaJSON;
   
-	 const {dado} = require("./functions.js");
+	 const {dado} = require("../../functions");
 	 var dice = dado(100);
 	 
 	 let sucess = "desastre";
