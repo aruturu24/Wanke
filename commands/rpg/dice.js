@@ -16,7 +16,7 @@ module.exports = {
 
   let result = [];
   
-  const {dado} = require("./functions");
+  const {dado} = require("./functions.js");
 
   for(var i = 0; i < dice[0]; i++) {
    result[i] = dado(dice[1]);
