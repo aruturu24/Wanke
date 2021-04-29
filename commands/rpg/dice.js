@@ -7,11 +7,12 @@ module.exports = {
 	guildOnly: false,
 	cooldown: 7,
 	execute(message, args) {
+	 var dice
 	 if(isNaN(args[0])) {
    const argsLower = args.shift().toLowerCase();
-   const dice = argsLower.split("d");
+   dice = argsLower.split("d");
 	 }else {
-	  const dice = [1, args[0]];
+	  dice = [1, args[0]];
 	 } //Transforma os argumentos num array de quantidade, faces
 
   let result = [];
