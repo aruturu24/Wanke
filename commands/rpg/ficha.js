@@ -21,7 +21,7 @@ module.exports = {
 	 }
 	 
 	 const fichaEmbed = new Discord.MessageEmbed()
-	  .setColor(fichaJSON.cor)
+	  .setColor(fichaJSON.nodice.cor)
 	  .setTitle(`*** ${fichaJSON.nodice.nome} ***`)
 	  .setDescription(`${fichaJSON.nodice.descrição}`)
 	  .addField('• INFO:',`**Idade:** ${fichaJSON.nodice.idade} anos\n**Altura:** ${fichaJSON.nodice.tamanho}m\n**Nacionalidade:** ${fichaJSON.nodice.nacionalidade}\n**Ocupação:** ${fichaJSON.nodice.ocupação}\n**Passatempo:** ${fichaJSON.nodice.passatempo}`)

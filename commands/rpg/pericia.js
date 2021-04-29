@@ -13,7 +13,7 @@ module.exports = {
   var fichaJSON;
   
 	 const {dado} = require("./functions");
-	 var dice = dado();
+	 var dice = dado(100);
 	 
 	 let sucess = "desastre";
 	 let txt = ['KKKKKKKKK MORREU', 'NÃO, NÃO, NÃÃÃÃOOOO', 'F...', 'Sorte tá em dia...'];

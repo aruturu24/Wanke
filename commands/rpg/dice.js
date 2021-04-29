@@ -1,7 +1,7 @@
 module.exports = {
 	name: 'dice',
 	description: 'Rolar um dado.',
-	aliases: ['dado', 'roll', 'r'],
+	aliases: ['dado', 'roll', 'r', 'd'],
 	args: true,
 	usage: '<(quantidade)D(faces)>',
 	guildOnly: false,
@@ -15,9 +15,11 @@ module.exports = {
 	 } //Transforma os argumentos num array de quantidade, faces
 
   let result = [];
+  
+  const {dado} = require("./functions");
 
   for(var i = 0; i < dice[0]; i++) {
-   result[i] = Math.floor(Math.random() * (dice[1]-1))+1;
+   result[i] = dado(dice[1]);
   } //Gera números aleatórios para a quantidade de dados colocada
 
   let msg = `**Resultado dos dados:**\n`;

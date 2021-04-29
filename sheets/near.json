@@ -11,16 +11,23 @@
   "descrição": "*sem descrição.*",
   "by": "Zoom",
  
-  "tamanho": 1,
+  "tamanho": 1.7,
   
-  "vida": 0,
-  "maxvida": 0,
+  "vida": 38,
+  "maxvida": 38,
   
-  "magia": 0,
-  "maxmagia": 0,
+  "magia": 40,
+  "maxmagia": 40,
   
-  "maxsanidade": 0
+  "maxsanidade": 80
  },
  
- "sanidade": 0
+ "sanidade": 80,
+ 
+ "forca": 25,
+ "constituicao": 35,
+ "destreza": 25,
+ "carisma": 0,
+ "inteligencia": 25,
+ "poder": 40
 }
