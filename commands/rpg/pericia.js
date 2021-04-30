@@ -15,18 +15,35 @@ module.exports = {
 	 const {dado} = require("../../functions");
 	 var dice = dado(100);
 	 
+	 let pericia;
+	 
 	 let sucess = "desastre";
 	 let txt = ['KKKKKKKKK MORREU', 'NÃO, NÃO, NÃÃÃÃOOOO', 'F...', 'Sorte tá em dia...'];
 	 
-	 if(args[0] == "ren" || args[0] == "fernando" || args[0] == "fefe") {
-   fichaJSON = JSON.parse(fs.readFileSync('sheets/ren.json'));
-	 }else if(args[0] == "near" || args[0] == "zoom" || args[0] == "z") {
-	  fichaJSON = JSON.parse(fs.readFileSync('sheets/near.json'));
-	 }else {
-	  return;
-	 }
+	 let ren = ['ren','fernando','riki','fefe'];
+	 let near = ['near','zoom','mello','funny'];
 	 
-	 let pericia = fichaJSON[args[1]];
+	 if(args.length > 1){
+	  if(ren.indexOf(args[0]) > -1) {
+    fichaJSON = JSON.parse(fs.readFileSync('sheets/ren.json'));
+	  }else if(near.indexOf(args[0]) > -1) {
+	   fichaJSON = JSON.parse(fs.readFileSync('sheets/near.json'));
+	  }else {
+	   return;
+	  }
+	 
+	  pericia = fichaJSON[args[1]];
+	 }else {
+	  if(message.author.id == '405712573741400074') {
+    fichaJSON = JSON.parse(fs.readFileSync('sheets/ren.json'));
+	  }else if(message.author.id == '699737918193008802') {
+	   fichaJSON = JSON.parse(fs.readFileSync('sheets/near.json'));
+	  }else {
+	   return;
+	  }
+	  
+	  pericia = fichaJSON[args[0]];
+	 }
 	 
 	 if(pericia === undefined){
 	  message.channel.send("Perícia inválida.");
