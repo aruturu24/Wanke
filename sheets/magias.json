@@ -1,0 +1,32 @@
+[
+ {
+  "nome": "Clonagem Humana",
+  "alias": ["clone", "clones", "clonagem", "clonagem humana", "clones de lótus", "clone de lótus", "clones de lotus", "clone de lotus"],
+  "descricao": "O utilizador cria um clone de si próprio, possuindo vida e pensamentos próprios.\nO clone tem ½ das perícias do utilizador.",
+  "status": [null, "1d10+5", ["1d6", "1d3"], "1d6", null]
+ },
+ {
+  "nome": "Plano Escuro",
+  "alias": ["plano", "plano escuro", "irradia a escuridão", "irradia a escuridao"],
+  "descricao": "O utilizador vai junto de um alvo para um plano de escuridão.\nQuem estiver no plano, é afetado pela escuridão, sofrendo a cada rodada.",
+  "status": [null, "1d5+2", ["1d6+2", 2], "1d10", "1d3"]
+ },
+ {
+  "nome": "Ablepsia",
+  "alias": ["cegueira e surdez assassina", "cegueira", "surdez", "ablepsia"],
+  "descricao": "O alvo fica incapaz de poder ouvir e enxergar alguma coisa.",
+  "status": [null, 5, null, "1d3", null]
+ },
+ {
+  "nome": "Sinalizador Mágico",
+  "alias": ["ajuda", "sinalizador", "sinalizador mágico", "sinalizador magico"],
+  "descricao": "O utilizador manda um sinal de luz no céu, podendo ser visto a vários km de distância.",
+  "status": [null, 1, null, null, null]
+ },
+ {
+  "nome": "Compulsão Mental",
+  "alias": ["compulsão mental", "compulsão"],
+  "descricao": "O utilizador consegue obrigar o alvo a pensar em algumas de suas memórias, e consegue vê-las com clareza.",
+  "status": [null, 5, null, null, null]
+ }
+]

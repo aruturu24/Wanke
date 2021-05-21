@@ -25,7 +25,7 @@ client.once('ready', () => {
 	
 	let seg=60*5;
 	setInterval(() => {
-  const index = Math.floor(Math.random() * (activities.length - 1) + 1);
+  const index = Math.floor(Math.random() * (activies.length - 1) + 1);
 	 client.user.setActivity(activies[index], {type: "WATCHING"});
 	}, seg * 1000);
 });
