@@ -108,7 +108,7 @@
       "vida": 38,
       "maxvida": 38,
       
-      "magia": 40,
+      "magia": 30,
       "maxmagia": 40,
       
       "maxsanidade": 80
@@ -192,7 +192,7 @@
       "descrição": "*Sem descrição*",
       "by": "Gustavo",
     
-      "tamanho": 1,
+      "tamanho": 1.85,
       
       "vida": 21,
       "maxvida": 21,
@@ -203,7 +203,7 @@
       "maxsanidade": 66
     },
     
-    "sanidade": 66,
+    "sanidade": 64,
     
     "força": 30,
     "constituição": 21,

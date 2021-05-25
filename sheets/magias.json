@@ -24,9 +24,15 @@
   "status": [null, 1, null, null, null]
  },
  {
-  "nome": "Compulsão Mental",
-  "alias": ["compulsão mental", "compulsão"],
-  "descricao": "O utilizador consegue obrigar o alvo a pensar em algumas de suas memórias, e consegue vê-las com clareza.",
-  "status": [null, 5, null, null, null]
- }
+    "nome": "Compulsão Mental",
+    "alias": ["compulsão mental", "compulsão"],
+    "descricao": "O utilizador consegue obrigar o alvo a pensar em algumas de suas memórias, e consegue vê-las com clareza.",
+    "status": [null, 5, null, null, null]
+ },
+ {
+    "nome": "Sciophobia (nome provisório)",
+    "alias": ["sciophobia"],
+    "descricao": "O utilizador .",
+    "status": ["1d10", "1d6", ["1d10+5", 5], "1d10", null]
+   }
 ]

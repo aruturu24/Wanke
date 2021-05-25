@@ -12,7 +12,7 @@ module.exports = {
     var fs = require("fs");
 
     const fichaJSON = JSON.parse(fs.readFileSync("sheets/ficha.json"));;
-	let index = 0;
+	let index;
 
     for (let a = 0; a < fichaJSON.length; a++) {
 		for (let b = 0; b < fichaJSON[a].nodice.alias.length; b++) {

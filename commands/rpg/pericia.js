@@ -44,6 +44,9 @@ module.exports = {
 			} else if (message.author.id == "699737918193008802") {
 				//Near Mello
 				index = 1;
+			} else if (message.author.id == "417444048085975050"){
+				//Francis Drake
+				index = 2;
 			} else {
 				message.channel.send("específique o nome do personagem.");
 				return;
