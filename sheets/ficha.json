@@ -1,0 +1,359 @@
+[
+  {
+    "nodice": {
+      "nome": "Ren Riki",
+      "alias": ["ren", "riki", "ren riki", "fernando", "fefe", "fernando moraes", "fernando moraes petito"],
+      "idade": 666,
+      "nacionalidade": "Japonês",
+      "ocupação": "Mercenário",
+      "passatempo": "Meditar",
+      "relações": "**Aaron Adler:** Melhor amigo\n**Near Mello Funny:** Amigo\n**Charley Arwin:** Amigo",
+    
+      "cor": "#40E0D0",
+      "descrição": "*Um homem alemão, com cabelos lisos e cavanhaque feito, sua roupa é preta, seus cabelos são loiros e sua pele é branca.*",
+      "by": "Fernando",
+    
+      "tamanho": 1.90,
+      
+      "vida": 24,
+      "maxvida": 24,
+      
+      "magia": 30,
+      "maxmagia": 30,
+      
+      "maxsanidade": 52
+    },
+    
+    "sanidade": 52,
+    
+    "força": 35,
+    "constituição": 20,
+    "destreza": 40,
+    "carisma": 5,
+    "inteligência": 20,
+    "poder": 30,
+    
+      "contabilidade": 5,
+      "arqueologia": 1,
+      "arquitetura": 5,
+      "arte": 10,
+      "história": 5,
+      
+      "português": 0,
+      "japonês": 100,
+      "inglês": 55,
+      "russo": 0,
+      "francês": 0,
+      "sueco": 0,
+      
+      "leis": 1,
+      "ciências ocultas": 80,
+      "pesquisar": 70,
+      
+      "flertar": 20,
+      "interrogar": 20,
+      "intimidar": 25,
+      "lábia": 5,
+      
+      "criptografia": 1,
+      "recuperação de dados": 1,
+      "vigilância eletrônica": 5,
+      "ciência forense": 60,
+      "sobrevivência": 60,
+      "farmácia": 5,
+      "fotografia": 15,
+      "radiotelegrafia": 5,
+      "hipnose": 0,
+      
+      "atletismo": 70,
+      "esconder": 70,
+      "computação": 11,
+      "disfarce": 3,
+      
+      "carro": 0,
+      "moto": 80,
+      "avião": 0,
+
+      "dispositivos explosivos": 1,
+      "roubar": 5,
+      "brigar": 80,
+      "mecânica": 10,
+      "medicina": 5,
+      
+      "pistola": 10,
+      "metralhadora": 0,
+      "rifle": 0,
+      "arremesso": 70,
+      
+      "psiquiatria": 10,
+      "vigilância": 50
+  },
+  
+  {
+    "nodice": {
+      "nome": "Near Mello Funny",
+      "alias": ["near", "mello", "funny", "near mello", "near mello funny", "n", "near m.", "near m", "near m. funny", "near m funny", "zoom", "z", "springfield", "arthur zoom"],
+      "idade": 28,
+      "nacionalidade": "Japonês",
+      "ocupação": "Ocultista / Mercenário",
+      "passatempo": "Doces / Fumar",
+      "relações": "**Jane Shinobu:** Melhor amiga\n**Henry Duckar:** Mentor\n**Joss:** Amigo\n**Dunsley:** Amigo\n**Kane:** Amigo\n**Ren Riki:** Amigo\n**Charley Arwin:** Amigo\n**Francis Drake:** Patrão",
+    
+      "cor": "#120A8F",
+      "descrição": "*Um homem branco, com cabelos longos e semi amarrado para trás, olheiras perceptíveis e está sempre acompanhado por um cigarro.*",
+      "by": "Zoom",
+    
+      "tamanho": 1.7,
+      
+      "vida": 38,
+      "maxvida": 38,
+      
+      "magia": 40,
+      "maxmagia": 40,
+      
+      "maxsanidade": 80
+    },
+    
+    "sanidade": 80,
+    
+    "força": 25,
+    "constituicao": 35,
+    "destreza": 25,
+    "carisma": 0,
+    "inteligência": 25,
+    "poder": 40,
+
+    "contabilidade": 5,
+    "arqueologia": 80,
+    "arquitetura": 5,
+    "arte": 10,
+    "história": 80,
+    
+    "português": 100,
+    "japonês": 100,
+    "inglês": 0,
+    "russo": 0,
+    "francês": 0,
+    "sueco": 0,
+    
+    "leis": 1,
+    "ciências ocultas": 80,
+    "pesquisar": 80,
+    
+    "flertar": 0,
+    "interrogar": 0,
+    "intimidar": 0,
+    "lábia": 0,
+    
+    "criptografia": 1,
+    "recuperação de dados": 1,
+    "vigilância eletrônica": 5,
+    "ciência forense": 10,
+    "sobrevivência": 17,
+    "farmácia": 5,
+    "fotografia": 15,
+    "radiotelegrafia": 5,
+    "hipnose": 0,
+    
+    "atletismo": 50,
+    "esconder": 35,
+    "computação": 16,
+    "disfarce": 3,
+    
+    "carro": 0,
+    "moto": 0,
+    "avião": 0,
+    
+    "dispositivos explosivos": 1,
+    "roubar": 26,
+    "brigar": 80,
+    "mecânica": 10,
+    "medicina": 5,
+    
+    "pistola": 80,
+    "metralhadora": 0,
+    "rifle": 0,
+    "arremesso": 20,
+    
+    "psiquiatria": 10,
+    "vigilância": 32
+  },
+  {
+    "nodice": {
+      "nome": "Francis Drake",
+      "alias": ["francis", "drake", "francis drake", "gustavo", "goulem", "gustavo galdino", "gou"],
+      "idade": 30,
+      "nacionalidade": "Brasileiro",
+      "ocupação": "Cyber Mercenário",
+      "passatempo": "*Sem passatempo*",
+      "relações": "**Sheldon:** Melhor amigo\n**Ingrid:** Ex Ficante\n**Melanie:** Melhor amiga",
+    
+      "cor": "#FFFFFF",
+      "descrição": "*Sem descrição*",
+      "by": "Gustavo",
+    
+      "tamanho": 1,
+      
+      "vida": 21,
+      "maxvida": 21,
+      
+      "magia": 33,
+      "maxmagia": 33,
+      
+      "maxsanidade": 66
+    },
+    
+    "sanidade": 66,
+    
+    "força": 30,
+    "constituição": 21,
+    "destreza": 32,
+    "carisma": 28,
+    "inteligência": 35,
+    "poder": 33,
+    
+      "contabilidade": 50,
+      "arqueologia": 1,
+      "arquitetura": 5,
+      "arte": 10,
+      "história": 5,
+      
+      "português": 100,
+      "japonês": 0,
+      "inglês": 100,
+      "russo": 0,
+      "francês": 0,
+      "sueco": 0,
+      
+      "leis": 1,
+      "ciências ocultas": 10,
+      "pesquisar": 45,
+      
+      "flertar": 50,
+      "interrogar": 10,
+      "intimidar": 45,
+      "lábia": 50,
+      
+      "criptografia": 50,
+      "recuperação de dados": 35,
+      "vigilância eletrônica": 25,
+      "ciência forense": 10,
+      "sobrevivência": 15,
+      "farmácia": 5,
+      "fotografia": 15,
+      "radiotelegrafia": 5,
+      "hipnose": 0,
+      
+      "atletismo": 59,
+      "esconder": 40,
+      "computação": 85,
+      "disfarce": 20,
+      
+      "carro": 85,
+      "moto": 85,
+      "avião": 85,
+      
+      "dispositivos explosivos": 1,
+      "roubar": 85,
+      "brigar": 65,
+      "mecânica": 10,
+      "medicina": 45,
+      
+      "pistola": 50,
+      "metralhadora": 50,
+      "rifle": 0,
+      "arremesso": 20,
+      
+      "psiquiatria": 10,
+      "vigilância": 37
+  },
+  {
+    "nodice": {
+      "nome": "Liev Rhuan",
+      "alias": ["liev", "rhuan", "liev rhuan"],
+      "idade": 29,
+      "nacionalidade": "Russo",
+      "ocupação": "Psicólogo e hipnólogo",
+      "passatempo": "Ler e Boxe",
+      "relações": "**Louise:** Mãe adotiva\n**Charley Arwin:** Professor",
+    
+      "cor": "#000000",
+      "descrição": "*Um homem alto, extremamente branco com cabelos longos e ondulados e seu olho de cor preta, meio fortinho*",
+      "by": "Johnny",
+    
+      "tamanho": 1.81,
+      
+      "vida": 27,
+      "maxvida": 27,
+      
+      "magia": 37,
+      "maxmagia": 37,
+      
+      "maxsanidade": 74
+    },
+    
+    "sanidade": 74,
+    
+    "força": 19,
+    "constituição": 23,
+    "destreza": 15,
+    "carisma": 25,
+    "inteligência": 31,
+    "poder": 37,
+    
+      "contabilidade": 15,
+      "arqueologia": 1,
+      "arquitetura": 5,
+      "arte": 10,
+      "história": 35,
+      
+      "português": 0,
+      "japonês": 0,
+      "inglês": 45,
+      "russo": 100,
+      "francês": 60,
+      "sueco": 20,
+      
+      "leis": 1,
+      "ciências ocultas": 40,
+      "pesquisar": 55,
+      
+      "flertar": 60,
+      "interrogar": 45,
+      "intimidar": 15,
+      "lábia": 65,
+      
+      "criptografia": 1,
+      "recuperação de dados": 6,
+      "vigilância eletrônica": 10,
+      "ciência forense": 10,
+      "sobrevivência": 20,
+      "farmácia": 5,
+      "fotografia": 15,
+      "radiotelegrafia": 5,
+      "hipnose": 75,
+      
+      "atletismo": 30,
+      "esconder": 25,
+      "computação": 50,
+      "disfarce": 40,
+      
+      "carro": 40,
+      "moto": 0,
+      "avião": 0,
+
+      "dispositivos explosivos": 1,
+      "roubar": 10,
+      "brigar": 80,
+      "mecânica": 10,
+      "medicina": 35,
+      
+      "pistola": 40,
+      "metralhadora": 0,
+      "rifle": 33,
+      "arremesso": 20,
+      
+      "psiquiatria": 80,
+      "vigilância": 50
+  }
+]

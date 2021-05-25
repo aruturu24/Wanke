@@ -33,7 +33,7 @@ client.once('ready', () => {
 client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-	const args = message.content.slice(prefix.length).trim().split(/ +/);
+	let args = message.content.slice(prefix.length).trim().split(/ +/);
 	const commandName = args.shift().toLowerCase();
 
 	const command = client.commands.get(commandName)
@@ -60,6 +60,19 @@ client.on('message', message => {
 		}
 
 		return message.channel.send(reply);
+	}
+
+	if(command.argsManual && args.length > 0){
+		const back = args;
+		let idk = "";
+		for (let i = 0; i < back.length; i++) {
+			if(i != back.length-1) {
+				idk += `${back[i]} `
+			} else {
+				idk += back[i];
+			}
+		}
+		args = idk.split("/");
 	}
 
 	const { cooldowns } = client;
